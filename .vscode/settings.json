@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+
+      // backend
+      "**/project/backend/node_modules": true,
+      "**/project/backend/bin": true,
+      "**/project/backend/public": true,
+      "**/project/backend/views": true,
+      "**/project/backend/package**.json": true,
+      
+      // frontend
+      "**/project/frontend/app-vue/node_modules": true,
+      "**/project/frontend/app-vue/.eslintrc.json": true,
+      "**/project/frontend/app-vue/babel.config.js": true,
+      "**/project/frontend/app-vue/jsconfig.json": true,
+      "**/project/frontend/app-vue/vue.config.js": true,
+      "**/project/frontend/app-vue/package**.json": true,
+      
+    }
+}
+  
