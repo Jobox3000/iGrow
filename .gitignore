@@ -9,4 +9,6 @@ project/backend/.env
 project/backend/.DS_Store
 
 project/frontend/app-vue/node_modules
+project/frontend/app-vue/dist
+project/frontend/app-vue/.DS_Store
 project/frontend/.DS_Store
