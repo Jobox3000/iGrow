@@ -1,0 +1,22 @@
+{
+    "base_url": "",
+
+    "api": {
+        
+        "banks": {},
+
+        "auth": {},
+
+        "users": {},
+
+        "grows": {},
+
+        "seeds": {},
+
+        "calendars": {},
+
+        "events": {}
+
+    }
+
+}
