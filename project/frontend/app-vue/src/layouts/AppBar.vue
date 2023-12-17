@@ -1,30 +1,39 @@
 <template>
-  <div v-if="AuthCurrentRoutes">
+  <!-- Auth_Appbar -->
+  <div v-if="AuthRoutes">
     <AuthBar />
   </div>
-  <div v-else-if="AppCurrentRoutes">
+  <!-- App_Appbar -->
+  <div v-else-if="AppRoutes">
     <AppBar />
+  </div>
+  <!-- No_Appbar -->
+  <div v-else-if="NoRoutes">
+    {{ null }}
   </div>
 </template>
 
 <script>
-import AppBar from '../components/appbar/AppbarComponent.vue'
-import AuthBar from '../components/appbar/AuthbarComponent.vue'
-
+import AuthBar from '../components/appbar/AuthBar.vue'
+import AppBar from '../components/appbar/AppBar.vue'
 export default {
   components: {
+    AuthBar,
     AppBar,
-    AuthBar
   },
   computed: {
-    AuthCurrentRoutes() {
+    AuthRoutes() {
       const allRoutes = ['Login', 'Register'];
       return allRoutes.includes(this.$route.meta.title);
     },
-    AppCurrentRoutes() {
-      const allRoutes = ['Home', 'Shop', 'Docs', 'MyGrows', 'AllGrows'];
+    AppRoutes() {
+      const allRoutes = ['Home', 'Docs', 'MyGrows', 'AllGrows', 'Shop', 'Catalog', 'Cart'];
       return allRoutes.includes(this.$route.meta.title);
-    }
+    },
+    NoRoutes() {
+      const allRoutes = ['Index', 'Account', 'Direct'];
+      return allRoutes.includes(this.$route.meta.title);
+    },
   },
 }
 </script>

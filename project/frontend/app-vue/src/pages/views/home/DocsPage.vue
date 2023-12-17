@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Docs Page</h1>
-    <p>Docs</p>
+    {{ null }}
   </div>
 </template>

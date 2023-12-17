@@ -1,7 +1,7 @@
 <template>
   <div class="p-2">
     <NavBar />
-    <router-view class="bg-emerald-100 rounded-3xl" />
+    <router-view />
     <AppBar />
   </div>
 </template>

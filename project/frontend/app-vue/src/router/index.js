@@ -6,7 +6,10 @@ import RegisterPage from '../pages/auth/RegisterPage';
 import DocsPage from '../pages/views/home/DocsPage';
 import MyGrowsPage from '../pages/views/home/MyPage';
 import AllGrowsPage from '../pages/views/home/AllPage';
-import ShopPage from '../pages/views/ShopPage';
+import CatalogPage from '../pages/views/shop/CatalogPage';
+import CartPage from '../pages/views/shop/CartPage';
+import AccountPage from '../pages/views/AccountPage';
+import DirectPage from '../pages/views/DirectPage';
 
 const routes = [
 
@@ -80,12 +83,45 @@ const routes = [
     // Shop
     {
         path: '/shop',
-        component: ShopPage,
+        component: CatalogPage,
         meta: {
             title: 'Shop',
         },
-    }
+    },
+    // Shop
+    {
+        path: '/shop/catalog',
+        component: CatalogPage,
+        meta: {
+            title: 'Catalog',
+        },
+    },
+    // Shop
+    {
+        path: '/shop/cart',
+        component: CartPage,
+        meta: {
+            title: 'Cart',
+        },
+    },
 
+    // Account
+    {
+        path: '/account',
+        component: AccountPage,
+        meta: {
+            title: 'Account',
+        },
+    },
+
+    // Direct
+    {
+        path: '/direct',
+        component: DirectPage,
+        meta: {
+            title: 'Direct',
+        },
+    },
 ];
 
 const router = createRouter({

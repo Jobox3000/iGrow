@@ -8,7 +8,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-emerald-200">
+  <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
@@ -18,6 +18,16 @@
 </html>
 
 <style>
+  * {
+    -webkit-tap-highlight-color: transparent; 
+    color: #ddd;
+  }
+  html, body {
+    background-color: black;
+  }
+  ::placeholder {
+    color: #ddd;
+  }
   input {
     outline: none;
   }
